@@ -16,5 +16,5 @@ function getDogFact() {
     .then(data => {console.log(data); return data;})
     .then(data => console.log(data.data[0]))
 }
-
+console.log("AJAX call");
 getDogFact();
