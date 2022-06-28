@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <!-- Can only be one base tag -->
+    <!-- Define a base link and can use it with #anchor -->
+    <base target="_top" href="https://example.com/">
+    <a href="#anchor">click here</a>
+</head>
+
+<body>
+    <!-- Address element indicates that the enclosed HTML 
+        provides contact information for a person or people, 
+        or for an organization. -->
+    <address>
+        <strong>Twitter, Inc.</strong>
+        <br>
+        795 Folsom Ave, Suite 600
+        <br>
+        San Francisco, CA 94107
+        <br>
+        <abbr title="Phone">P:</abbr> (123) 456-7890
+    </address>
+
+    <!-- Asside represents text to the side of a paragraph -->
+    <p>Salamanders are a group of amphibians with a lizard-like appearance, including short legs and a tail in both
+        larval and adult forms.</p>
+
+    <aside>
+        <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+    </aside>
+
+    <p>Several species of salamander inhabit the temperate rainforest of the Pacific Northwest, including the Ensatina,
+        the Northwestern Salamander and the Rough-skinned Newt. Most salamanders are nocturnal, and hunt for insects,
+        worms and other small creatures.</p>
+
+    <!-- Blockquote indicates that the enclosed text is an extended quotation -->
+    <blockquote>
+        <p>Salamanders are a group of amphibians with a lizard-like appearance, including short legs and a tail in both
+            larval and adult forms.</p>
+    </blockquote>
+
+    <!-- dd provides the description definition, or value for the 
+        preceding term in a description list -->
+    <!-- There is also dl dt -->
+    <dl>
+        <dt>Beast of Bodmin</dt>
+        <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+        <dt>Morgawr</dt>
+        <dd>A sea serpent.</dd>
+
+        <dt>Owlman</dt>
+        <dd>A giant owl-like creature.</dd>
+    </dl>
+
+    <!-- The figcaption element represents a caption or describing
+    the rest of the contents of its parent figure element -->
+    <figure>
+        <img src="https://assets3.thrillist.com/v1/image/3010676/720x960/scale;webp=auto;jpeg_quality=60.jpg"
+            width="200px">
+        <figcaption>An elephant at sunset</figcaption>
+    </figure>
+
+    <!-- Menu is the same as a ul -->
+    <menu>
+        <li><button onclick="copy()">Copy</button></li>
+        <li><button onclick="cut()">Cut</button></li>
+        <li><button onclick="paste()">Paste</button></li>
+    </menu>
+
+    <!-- Pre is a tag that is for preformated text -->
+    <pre>
+        L          TE
+          A       A
+            C    V
+             R A
+             DOU
+          ET QUI T'
+          ORNE O CI
+           VILISÉ
+          OTE-  TU VEUX
+           LA    BIEN
+          SI      RESPI
+                  RER       - Apollinaire
+    </pre>
+
+    <!-- Abbr represents an abbreviation or acronym -->
+    <p>You can use <abbr title="Cascading Style Sheets">CSS</abbr> to style your <abbr
+            title="HyperText Markup Language">HTML</abbr>.</p>
+
+    <!-- bdi is used to wrap a span of text and instructs 
+        the bidirectional algorithm to treat this text 
+        in isolation from its surroundings.  -->
+    <!-- There is also bdo -->
+    <ul>
+        <li><bdi class="name">Evil Steven</bdi>: 1st place</li>
+        <li><span class="name">تیز سمی</span>: 3rd place</li>
+        <li><bdi class="name">الرجل القوي إيان</bdi>: 4th place</li>
+        <li><span class="name" dir="auto">تیز سمی</span>: 5th place</li>
+    </ul>
+
+    <!-- Cite is an element used to describe a refence to work -->
+    <figure>
+        <blockquote>
+            <p>It was a bright cold day in April, and the clocks were striking thirteen.</p>
+        </blockquote>
+        <figcaption>First sentence in <cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen
+                    Eighty-Four</a></cite> by George Orwell (Part 1, Chapter 1).</figcaption>
+    </figure>
+
+    <!-- Code lement displays its contents styled in a 
+        fashion intended to indicate that the text is a 
+        short fragment of computer code. -->
+    <p>The <code>push()</code> method adds one or more elements to the end of an array and returns the new length of the
+        array.</p>
+
+    <!-- Data is used to display machine-readable data. -->
+    <style>
+        data:hover::after {
+            content: ' (ID ' attr(value) ')';
+            font-size: .7em;
+        }
+    </style>
+    <p>New Products:</p>
+    <ul>
+        <li><data value="398">Mini Ketchup</data></li>
+        <li><data value="399">Jumbo Ketchup</data></li>
+        <li><data value="400">Mega Jumbo Ketchup</data></li>
+    </ul>
+
+</body>
+
+</html>
