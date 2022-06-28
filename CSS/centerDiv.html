@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center a div</title>
+</head>
+<body>
+
+    <style>
+        .center {
+            background-color: blueviolet;
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+        .parent {
+            background: #CCCCCC;
+            height: 400px;
+            width: 400px;
+            position: relative;
+        }
+        .child {
+            background: #FFFF00;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+
+    <div class="center">
+
+    </div>
+
+    <div class="parent">
+        <div class="child">
+            <p>This is a child div</p>
+        </div>
+
+    
+</body>
+</html>
